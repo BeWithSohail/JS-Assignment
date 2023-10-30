@@ -1,0 +1,38 @@
+        .form_elements{
+            background: #fff;
+            border: 1px solid #fff;
+            box-shadow: 10px 10px 10px 10px #ccc;
+            width: 500px;
+            margin: auto;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        input{
+            display: block;
+            width: 80%;
+            margin: auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            border-color: blue;
+        }
+        button{
+            background: #2f2fed;
+            color: #fff;
+            padding: 8px 15px;
+            border: 1px solid #2f2fed;
+            box-shadow: none;
+            cursor: pointer;
+            font-size: 22px;
+            margin: 0 15px;
+        }
+
+        .output_result{
+            border: 2px solid #31cbf1;
+            padding: 40px;
+            height: 200px;
+            width: 500px;
+            margin: auto;
+            margin-top: 50px;
+        }
