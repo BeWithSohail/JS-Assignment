@@ -837,17 +837,164 @@
 // console.log(finalArrayValue);
 
 // JS find method use in arrays of a object
+// let array1 = ["sohail","sahil","adil","akram"];
+
+// let finalOutput = array1.find((char) => {
+//      return char[1] == "a";
+// });
+// console.log(finalOutput);
+
+
+// Array slice method uses
+// array.slice(startIndex, endIndex)
+// let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let sliceNumber = (startindex, endIndex) => {
+//     return arr1.slice(startindex, endIndex);
+// };
+// let finalslicedNumbers = sliceNumber(3,5);
+// console.log(finalslicedNumbers);
 
 
 // JS every method use
 // JS every method use in arrays of a object
 
-// JS some method
-// JS some method use in arrays of a object
 
+// JS some method
+// const arraay1 = [2, 4, 6, 8, 2];
+// function initialize(elements) {
+//      if (elements % 2 === 0) {
+//           return true;
+//      } else {
+//           return false;
+//      }
+// }
+
+
+// let stored = arraay1.some(initialize);
+// console.log(stored);
+
+// JS some method use in arrays of a object
+let objectCollection = [
+     {
+     name: "sohail",
+     address: "kawakol",
+     },
+     {
+          name: "adil",
+          address: "pune",
+     },
+     {
+          name: "wakil",
+          address: "delhi",
+     },
+]
+let findCharFunction = function (string) { 
+   return string.name == "pappu";
+}
+
+let outputResult = objectCollection.some(findCharFunction);
+console.log(outputResult);
 // JS fill method
 // JS fill method use in arrays of a object
 
 // JS splice method
+// const months = ['Jan', 'March', 'April', 'June','August'];
+// months.splice(1, 0, "feb");
+// months.splice(4,1, "May","june","july");
+// // months.splice(3, 3,"april","may","june","july","august","september");
+// console.log(months);
+
+//Task
+
+//1//Remove 0 (zero) elements before index 2, and insert "drum"
+const myFish1 = ["angel", "clown", "mandarin", "sturgeon"];
+myFish1.splice(2, 0, "drum");
+console.log(myFish1);
+
+//2//Remove 1 element at index 2, and insert "trumpet"
+const myFish2 = ["angel", "clown", "drum", "sturgeon"];
+myFish2.splice(2,1,"trumpet");
+console.log(myFish2);
+
+//3//Remove 0 (zero) elements before index 2, and insert "drum" and "guitar"
+const myFish3 = ["angel", "clown", "mandarin", "sturgeon"];
+myFish3.splice(2, 0, "drum", "guitar");
+console.log(myFish3);
+
+//4//Remove 1 element at index 2, and insert "trumpet"
+const myFish4 = ["angel", "clown", "mandarin", "sturgeon"];
+myFish4.splice(2, 1, "trumpet");
+console.log(myFish4);
+
+//5// Remove 2 elements from index 0, and insert "parrot", "anemone" and "blue"
+const myFish5 = ["angel", "clown", "mandarin", "sturgeon"];
+myFish5.splice(0, 2, "parrot", "anemone");
+console.log(myFish5);
+
 // JS fill method use in arrays of a object
 
+
+
+// const months = ['Jan', 'March', 'April', 'June'];
+// let finalArrays = months.splice(1, 0, "February","May");
+// console.log(months);
+
+
+// Strings and arrays are iterable so we use forof loops in iterable object
+// object is not iterable
+
+// array like objects
+// strings are array like objects
+
+
+// optional chaining in objects
+// optional chaining in
+// optional chaining in objects
+
+// const obj = {
+//      name: "sohail",
+//      address: {
+//           district: "nawada",
+//           state:"bihar"
+//      },
+// }
+
+// console.log(obj?.address?.district);
+
+// use of this keyword in javascript
+function myfunction(position,address) {
+     console.log(`Hi Everyone My name is ${this.name} and 
+      I am ${this.age} year's old! i am working as a ${position} and i live in ${address}
+     `);
+}
+
+let personDetails1 = {
+     name: "sohail",
+     age: 20,
+};
+
+let personDetails2 = {
+     name: "siraj",
+     age: 32,
+}
+let personDetails3 = {
+     name: "adil",
+     age: 25,
+}
+
+let personDetails4 = {
+     name: "wakil",
+     age: 28,
+}
+
+// call Method 
+// myfunction.call(personDetails2,"UI DEVELOPER", "NAWADA");
+// Apply Method
+myfunction.apply(personDetails2, ["UI DEVELOPER", "NAWADA"]);
+
+
+// call apply and bind
+// use of call function n
+
+
+// use of this 
