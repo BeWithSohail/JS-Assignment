@@ -6,6 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>JS OOPS</title>
     <link rel="stylesheet" href="monster_killing.css">
+    <style>
+      *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar ul li{
+        display: inline-block;
+        margin: 10px;
+      }
+
+
+      body{
+        background-color:#ccc;
+      }
+      #main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+      }
+      .container{
+        max-width:1170px;
+        width: 1170px;
+        margin: auto;
+      }
+
+      h2{
+        background-color: #2f89b0;
+        padding: 2rem;
+        border-radius: 10px;
+        color: #fff;
+      }
+
+      .grandParent{
+
+      }
+      .Parent{
+        
+      }
+      .Child{
+
+      }
+
+    </style>
 </head>
 <!-- <section id="health-levels">
     <h2>MONSTER HEALTH</h2>
@@ -21,30 +67,91 @@
   </section> -->
 
 
-  <div id="main">
-    
-  </div>
+  <!-- <div id="main">
+        <div class="container">
+              <h2> 
+                Current Color <span id="currentColor"> rgb(255,255,255) </span>
+              </h2> 
+              <button id="change-bg-color">
+                Change background color 
+              </button>
+              <input type="text" name="" id="">
+        </div>
+  </div> -->
 
-  <div class="abc">
+  <!-- <div class="abc">
       <div class="container">
-        <h2>
-          My name is md sohail alam
-        </h2>
-        <p>
-          sdfhfskjdfhjk
-        </p>
-        <button>
-          click me 
-        </button>
+
+          <h2 id="demo">
+            My name is md <span style="display:none;">  sohail alam</span> 
+          </h2>
+
+
+          <div class="navbar">
+            <ul class="navitems_parent">
+              <li> <a href="#"> home </a></li>
+              <li> <a href="#"> about </a></li>
+              <li> <a href="#"> contact </a></li>
+              <li> <a href="#"> faq </a></li>
+            </ul>
+          </div>
+
+
+          <div class="button_collection"> 
+              <button id="one"> click me1 </button>
+              <button id="two"> click me2 </button>
+              <button id="three"> click me3 </button>
+              <button id="four"> click me4 </button>
+              <button id="five"> click me5 </button>
+          </div>
+
+
+<p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero totam sequi modi, nobis, natus earum ullam officia nihil incidunt atque, assumenda necessitatibus ducimus ea perferendis nam maiores odit dicta?
+          </p>
+          <button>
+            click me 
+          </button>
       </div>
-  </div>
+  </div> -->
 
 
+  <!-- <div class="grandparent"> Grand Parent
+    <div class="parent">
+      Parent
+      <div class="child">
+        Child
+      </div>
+    </div>
+  </div> -->
 
+  <!-- To do Task -->
+    <div class="search_parent"> 
+        <div class="addtodo">
+            <form action="" class="form_elements">
+              <input type="text" placeholder="" id="search_text" id="searchText" value="">
+              <button id="addtodo"> Add Todo</button>
+            </form>
+        </div>
+        <div class="todo_list_elements">
+            <ul class="todoitems">
+              <li> 
+                <span class="text_todo"> 
+                    To DO 1 
+                </span> 
+                <div class="btn_container">      
+                    <button class="todo-btn done"> Done </button>
+                    <button class="todo-btn remove"> Remove </button>
+                </div>
+              </li>
+            </ul>
+        </div>
+    </div>
+  <!-- End -->
 
     <!-- external JS -->
     <!-- <script src="js/assignment4_vendor.js"></script> -->
-    <script src="js/assignment5.js"></script>
+    <script src="js/assignment5.js" ></script>
     <!-- End -->
 
   </body>
