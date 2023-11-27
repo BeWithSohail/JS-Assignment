@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Check if a string is palindrom or not  </title>
+</head>
+<body>
+    
+
+    <script>
+
+      // Palindrom using arrays methods in js 
+      // let name = prompt("Please enter a name");
+      // let nameArray = name.split("");
+      // let reverseName = nameArray.reverse();
+      // // let nametoString = reverseName.toString("");
+      // let nametoString = reverseName.join("");
+
+      // function palindrome(){
+      //   if(name === nametoString){
+      //     console.log(`${name} is a plaindrome`);
+      //   }
+      //   else{
+      //     console.log(`${name} is not a plaindrome`);
+      //   }
+      // }
+      // palindrome();
+
+      
+  
+        
+
+      function palindrome(name) {
+  
+    let length = name.length;
+    for (let i = 0; i < length / 2; i++) {
+        let lastChar = name[length - 1 - i];
+        let firstChar = name[i];
+        if (firstChar !== lastChar) {
+            return false; // If a mismatch is found, it's not a palindrome
+        }
+    }
+    return true; // If no mismatch is found, it's a palindrome
+}
+
+let userInput = prompt("Please enter a name");
+
+if (userInput === null) {
+    console.log("User canceled or did not enter anything.");
+} else {
+    if (palindrome(userInput)) {
+        console.log(`${userInput} is a palindrome`);
+    } else {
+        console.log(`${userInput} is not a palindrome`);
+    }
+}
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Find the factorial of a numbers  </title>
+</head>
+<body>
+    
+
+    <script>
+        let a = prompt("Enter the number");
+        let b = prompt("Enter the number");
+        let c = prompt("Enter the number");
+  
+        
+
+        //console.log(result)
+        // console.log(`The number is ${a},${b},${c} and the largest Number is ${result}`)
+
+        function largestNumber(a,b,c) {
+            response1 =  a%10;
+            response2 =  b%10;
+            response3 =  c%10;
+            if(response1 == response2 && response1 == response3){
+              console.log("having same digits")
+            }else{
+              console.log("not smae digita")
+            }
+        }
+        console.log(largestNumber(a,b,c));
+
+    </script>
+</body>
+</html>

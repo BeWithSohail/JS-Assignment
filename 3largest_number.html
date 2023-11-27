@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Largest Number of three number </title>
+</head>
+<body>
+    
+
+    <script>
+        let a = prompt("Enter the first number");
+        let b = prompt("Enter the second number");
+        let c = prompt("Enter the third number");
+        let result = largestNumber(a,b,c);
+        console.log(result)
+        // console.log(`The number is ${a},${b},${c} and the largest Number is ${result}`)
+
+        function largestNumber(a,b,c) {
+            if(a>=b && a>=c){
+                return a;
+            }else if(b>=a && b>=c){
+                return b;
+            }else{
+                return c;
+            }
+        }
+
+    </script>
+</body>
+</html>
